@@ -1,18 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    int v[] = {120, 150, 80, 200, 300, 250};
-    int n = 6;
-    int maior = 0;
+    int v[] = {2, 8, 1, 6, 10};
+    char sobrenome[] = "nazario";
 
-    for (int i = 0; i < n - 1; i++) {
-        int soma = v[i] + v[i + 1];
-        if (soma > maior) {
-            maior = soma;
+    // números maiores que 5
+    for (int i = 0; i < 5; i++) {
+        if (v[i] > 5) {
+            printf("%d ", v[i]);
         }
     }
 
-    printf("Maior soma: %d\n", maior);
+    printf("\n");
+
+    // letras alternadas do sobrenome
+    for (int i = 0; sobrenome[i] != '\0'; i += 2) {
+        printf("%c", sobrenome[i]);
+    }
 
     return 0;
 }
