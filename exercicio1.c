@@ -1,16 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int precos[] = {10, 20, 35, 50, 75};
-    int alvo = 55;
+    int v[] = {1, 2, 3, 4, 5};
     int n = 5;
 
-    for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (precos[i] + precos[j] == alvo) {
-                printf("Indices: %d e %d\n", i, j);
-            }
-        }
+    for (int i = n - 1; i >= 0; i--) {
+        printf("%d ", v[i]);
     }
 
     return 0;
