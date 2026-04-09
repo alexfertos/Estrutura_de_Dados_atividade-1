@@ -1,4 +1,4 @@
-// Exercício 2 - Soma de Reproduções Consecutivas
+// Exercício - Soma de Reproduções Consecutivas
 #include <stdio.h>
 
 int main() {
